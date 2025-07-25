@@ -110,7 +110,7 @@ const Skills = () => {
 
         <div>
           <img
-            src="/src/assets/IMG000.jpg"
+            src="./IMG000.jpg"
             alt=""
             className="w-70 h-80 sm:w-100 sm:h-110 md:w-300 md:h-100 lg:w-250 lg:h-110 xl:w-200 xl:h-100  border rounded-2xl border mx-auto transition duration-500 ease-in-out 
     hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"

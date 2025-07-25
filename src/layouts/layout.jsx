@@ -40,7 +40,7 @@ const LayoutPage = () => {
               Contact
             </a>
             <a
-              href="/src/assets/Resume.docx"
+              href="./Resume.docx"
               download
               className="layout-Navlink"
             >
@@ -63,7 +63,7 @@ const LayoutPage = () => {
             href="tel:+998943322218"
             className="flex justify-center gap-2 items-center hover:underline"
           >
-            <img src="/src/assets/phone.png" alt="Phone" className="w-5 h-5" />
+            <img src="./phone.png" alt="Phone" className="w-5 h-5" />
             +998 94 332 22 18
           </a>
 
@@ -71,18 +71,18 @@ const LayoutPage = () => {
 
           <div className="flex justify-center gap-6 mt-4">
             <a target="_blank" href="https://github.com/maxmutov-nuriddin?tab=repositories">
-              <img src="/src/assets/git.png" alt="git" className="w-8 h-8" />
+              <img src="./git.png" alt="git" className="w-8 h-8" />
             </a>
             <a target="_blank" href="https://instagram.com/mv_nuriddin">
               <img
-                src="/src/assets/instagram.png"
+                src="./instagram.png"
                 alt="instagram"
                 className="w-8 h-8"
               />
             </a>
             <a target="_blank" href="https://t.me/mv_nuriddin">
               <img
-                src="/src/assets/telegram.png"
+                src="./telegram.png"
                 alt="telegram"
                 className="w-8 h-8"
               />

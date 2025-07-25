@@ -4,37 +4,37 @@ const CardProject = () => {
   const list = [
     {
       title: "YouTube",
-      img: "/src/assets/photo_2025-07-23_15-45-31.jpg",
+      img: "./photo_2025-07-23_15-45-31.jpg",
       link: "https://mv-youtube.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin?tab=repositories",
     },
     {
       title: "MAOU",
-      img: "/src/assets/image.png",
+      img: "./image.png",
       link: "https://marketing-association-of-uzbekistan.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin/maou-website",
     },
     {
       title: "Turkish Dishes",
-      img: "/src/assets/dishes.jpg",
+      img: "./dishes.jpg",
       link: "https://mv-eat-turkish-site.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin?tab=repositories",
     },
     {
       title: "Product Site",
-      img: "/src/assets/product.jpg",
+      img: "./product.jpg",
       link: "https://mv-product-site.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin?tab=repositories",
     },
     {
       title: "logoipsum",
-      img: "/src/assets/logoipsum.jpg",
+      img: "./logoipsum.jpg",
       link: "https://logo-ipsum-site.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin?tab=repositories",
     },
     {
       title: "Coffee Roasters",
-      img: "/src/assets/cofferoasters.jpg",
+      img: "./cofferoasters.jpg",
       link: "https://mv-coffe-site.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin?tab=repositories",
     },

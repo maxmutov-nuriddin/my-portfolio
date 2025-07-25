@@ -17,7 +17,7 @@ const About = () => {
           <img
             className="w-70 h-80 sm:w-100 sm:h-110 md:w-300 md:h-100 lg:w-250 lg:h-110 xl:w-200 xl:h-110  border rounded-2xl border mx-auto transition duration-500 ease-in-out 
     hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"
-            src="/src/assets/IMG.PNG"
+            src="./IMG.PNG"
             alt=""
           />
         </div>
