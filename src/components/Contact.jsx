@@ -44,7 +44,6 @@ const Contact = () => {
         </div>
 
         <div>
-
           <input
             type="tel"
             name="phone"
