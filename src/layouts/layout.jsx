@@ -56,11 +56,46 @@ const LayoutPage = () => {
         <Outlet />
       </main>
 
-      <footer className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center">
-        <span className="layout-span__text">CV base</span> ©2025 Created by{" "}
-        <span className="layout-span__text">
-          <u>FWB</u>
-        </span>
+      <footer>
+        <div className="bg-[#EBE5C2] text-[#504B38] pt-10 pb-20 text-center flex flex-col gap-2">
+          <h2 className="font-black text-3xl">Nuriddin</h2>
+          <a target="_blank"
+            href="tel:+998943322218"
+            className="flex justify-center gap-2 items-center hover:underline"
+          >
+            <img src="/src/assets/phone.png" alt="Phone" className="w-5 h-5" />
+            +998 94 332 22 18
+          </a>
+
+          <p className="my-4">Sizni ijtimoiy tarmoqlarda kutamiz:</p>
+
+          <div className="flex justify-center gap-6 mt-4">
+            <a target="_blank" href="https://github.com/maxmutov-nuriddin?tab=repositories">
+              <img src="/src/assets/git.png" alt="git" className="w-8 h-8" />
+            </a>
+            <a target="_blank" href="https://instagram.com/mv_nuriddin">
+              <img
+                src="/src/assets/instagram.png"
+                alt="instagram"
+                className="w-8 h-8"
+              />
+            </a>
+            <a target="_blank" href="https://t.me/mv_nuriddin">
+              <img
+                src="/src/assets/telegram.png"
+                alt="telegram"
+                className="w-8 h-8"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center border-t border-[#504B38]/30">
+          <span className="layout-span__text">CV base</span> ©2025 Created by{" "}
+          <span className="layout-span__text">
+            <u>FWB</u>
+          </span>
+        </div>
       </footer>
     </div>
   );
