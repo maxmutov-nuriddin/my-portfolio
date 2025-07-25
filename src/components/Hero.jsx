@@ -5,7 +5,7 @@ const Hero = () => {
   Aos.init();
   return (
     <section
-      className="flex justify-between flex-col md:flex-row gap-5 "
+      className="flex justify-between flex-col md:flex-row gap-5 mt-5"
       data-aos="fade-down-left"
       data-aos-duration="1000"
     >
