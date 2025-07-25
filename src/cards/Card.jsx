@@ -63,7 +63,7 @@ const CardProject = () => {
             />
           </CardBody>
           <CardFooter className="text-small justify-between bg-[#EBE5C2]">
-            <b>{item.title}</b>
+            <b className="text-[#504B38]">{item.title}</b>
             <div className="flex gap-2">
               <a
                 href={item.git}
