@@ -39,7 +39,7 @@ const Contact = () => {
             placeholder="Ismingiz"
             value={formData.name}
             onChange={handleChange}
-            className="w-80 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
+            className="w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
           />
         </div>
 
@@ -50,7 +50,7 @@ const Contact = () => {
             placeholder="+998 90 123 45 67"
             value={formData.phone}
             onChange={handleChange}
-            className="w-80 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
+            className="w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
           />
         </div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
             placeholder="Xabaringizni yozing..."
             value={formData.message}
             onChange={handleChange}
-            className="w-80 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
+            className="w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
           />
         </div>
 

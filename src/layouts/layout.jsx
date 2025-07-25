@@ -56,7 +56,7 @@ const LayoutPage = () => {
         <Outlet />
       </main>
 
-      <footer>
+      <footer className="w-[100%]">
         <div className="bg-[#EBE5C2] text-[#504B38] pt-10 pb-20 text-center flex flex-col gap-2">
           <h2 className="font-black text-3xl">Nuriddin</h2>
           <a target="_blank"
