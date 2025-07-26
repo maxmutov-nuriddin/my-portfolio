@@ -7,8 +7,6 @@ const Skills = () => {
     <section
       className="my-10"
       id="skills"
-      data-aos="fade-down-left"
-      data-aos-duration="1000"
     >
       <h2 className="text-center font-black text-5xl text-[#504B38]">Skills</h2>
 
@@ -18,9 +16,9 @@ const Skills = () => {
             Profesional Skills
           </h2>
           <p className="text-[#504B38]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-            optio id vero amet, alias architecto consectetur error eum eaque
-            sit.
+            Creative and detail-oriented Frontend Developer skilled in modern
+            web technologies like HTML, CSS, JavaScript, and React, with
+            hands-on experience in Git and UI/UX design tools.
           </p>
           <Progress
             classNames={{
@@ -140,7 +138,7 @@ const Skills = () => {
           <img
             src="./IMG000.jpg"
             alt=""
-            className="w-70 h-80 sm:w-100 sm:h-110 md:w-300 md:h-100 lg:w-250 lg:h-110 xl:w-200 xl:h-100  border-transparent rounded-2xl border mx-auto transition duration-500 ease-in-out 
+            className="w-70 h-80 sm:w-100 sm:h-110 md:w-300 md:h-100 lg:w-250 lg:h-110 xl:w-300 xl:h-100  border-transparent rounded-2xl border mx-auto transition duration-500 ease-in-out 
     hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"
           />
         </div>

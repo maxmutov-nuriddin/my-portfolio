@@ -6,8 +6,6 @@ const Work = () => {
     <section
       className="mt-10"
       id="work"
-      data-aos="fade-down-right"
-      data-aos-duration="1000"
     >
       <h2 className="text-center font-black text-5xl text-[#504B38]">Work</h2>
 

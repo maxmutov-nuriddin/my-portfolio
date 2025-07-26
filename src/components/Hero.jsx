@@ -6,8 +6,6 @@ const Hero = () => {
   return (
     <section
       className="flex justify-between flex-col md:flex-row gap-5 mt-5"
-      data-aos="fade-down-left"
-      data-aos-duration="1000"
     >
       <div className="flex flex-col justify-center gap-8 mx-auto md:mx-0">
         <h1 className="text-[#504B38] font-black text-4xl sm:text-6xl md:text-4xl lg:text-6xl">

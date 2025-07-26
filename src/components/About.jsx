@@ -7,8 +7,6 @@ const About = () => {
     <section
       className=""
       id="about"
-      data-aos="fade-down-right"
-      data-aos-duration="1000"
     >
       <h2 className="text-center font-black text-5xl text-[#504B38]">About</h2>
 
@@ -25,10 +23,12 @@ const About = () => {
         <div className="flex flex-col gap-6">
           <h2 className="font-black text-3xl text-[#504B38]">I'am Nuriddin</h2>
           <p className=" text-[#504B38]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates
-            soluta, aut earum nemo recusandae cumque perferendis! Recusandae
-            alias accusamus atque.
+            I'm Nuriddin Makhmudov — a frontend developer with 2+ years of
+            experience in building responsive, user-friendly web interfaces. I'm
+            also an Economics student at TMC University. I combine technical
+            skills with analytical thinking and currently work as a coding
+            instructor at CoddyCamp. Passionate about learning, teaching, and
+            solving real-world challenges.
           </p>
         </div>
       </div>
