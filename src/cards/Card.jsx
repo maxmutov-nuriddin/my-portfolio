@@ -54,7 +54,7 @@ const CardProject = () => {
           <CardBody className="overflow-visible p-0 ">
             <Image
               alt={item.title}
-              className="w-full object-cover h-[140px] transition duration-500 ease-in-out 
+              className="w-full border-transparent object-cover h-[140px] transition duration-500 ease-in-out 
     hover:scale-105 hover:shadow-2xl hover:shadow-[#504B38]"
               radius="lg"
               shadow="sm"
