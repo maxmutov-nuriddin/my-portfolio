@@ -86,6 +86,34 @@ const Skills = () => {
               label: "tracking-wider font-medium text-default-600",
               value: "text-foreground/60",
             }}
+            label="Bootstrap"
+            radius="sm"
+            showValueLabel={true}
+            size="sm"
+            value={90}
+          />
+          <Progress
+            classNames={{
+              base: "max-w-2xl",
+              track: "drop-shadow-md border rounded-xl border-[#504B38]",
+              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+              label: "tracking-wider font-medium text-default-600",
+              value: "text-foreground/60",
+            }}
+            label="Antd design"
+            radius="sm"
+            showValueLabel={true}
+            size="sm"
+            value={75}
+          />
+          <Progress
+            classNames={{
+              base: "max-w-2xl",
+              track: "drop-shadow-md border rounded-xl border-[#504B38]",
+              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+              label: "tracking-wider font-medium text-default-600",
+              value: "text-foreground/60",
+            }}
             label="React JS"
             radius="sm"
             showValueLabel={true}
