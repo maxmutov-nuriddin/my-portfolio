@@ -39,11 +39,7 @@ const LayoutPage = () => {
             <a href="#contact" className="layout-Navlink">
               Contact
             </a>
-            <a
-              href="./Resume.docx"
-              download
-              className="layout-Navlink"
-            >
+            <a href="./Resume.docx" download className="layout-Navlink">
               Resume
             </a>
           </nav>
@@ -59,7 +55,8 @@ const LayoutPage = () => {
       <footer className="w-[100%]">
         <div className="bg-[#EBE5C2] text-[#504B38] pt-10 pb-20 text-center flex flex-col gap-2">
           <h2 className="font-black text-3xl">Nuriddin</h2>
-          <a target="_blank"
+          <a
+            target="_blank"
             href="tel:+998943322218"
             className="flex justify-center gap-2 items-center hover:underline"
           >
@@ -70,22 +67,17 @@ const LayoutPage = () => {
           <p className="my-4">Sizni ijtimoiy tarmoqlarda kutamiz:</p>
 
           <div className="flex justify-center gap-6 mt-4">
-            <a target="_blank" href="https://github.com/maxmutov-nuriddin?tab=repositories">
+            <a
+              target="_blank"
+              href="https://github.com/maxmutov-nuriddin?tab=repositories"
+            >
               <img src="./git.png" alt="git" className="w-8 h-8" />
             </a>
             <a target="_blank" href="https://instagram.com/mv_nuriddin">
-              <img
-                src="./instagram.png"
-                alt="instagram"
-                className="w-8 h-8"
-              />
+              <img src="./instagram.png" alt="instagram" className="w-8 h-8" />
             </a>
             <a target="_blank" href="https://t.me/mv_nuriddin">
-              <img
-                src="./telegram.png"
-                alt="telegram"
-                className="w-8 h-8"
-              />
+              <img src="./telegram.png" alt="telegram" className="w-8 h-8" />
             </a>
           </div>
         </div>
