@@ -38,6 +38,12 @@ const CardProject = () => {
       link: "https://mv-coffe-site.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin?tab=repositories",
     },
+    {
+      title: "Random Game",
+      img: "./random-game.png",
+      link: "https://mvrandomgame.netlify.app/",
+      git: "https://github.com/maxmutov-nuriddin/JSGAME",
+    },
   ];
 
   return (
