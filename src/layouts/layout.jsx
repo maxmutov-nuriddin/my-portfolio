@@ -43,7 +43,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             <a href="./Resume.docx" download className="layout-Navlink">
               Resume
             </a>
-            <button onClick={toggleTheme}><img src="./dark-mode.png" className={`w-6 h-6 ${darkMode ? "bg-white rounded-[50%]" : ""}`} alt="dark" /></button>
+            <button onClick={toggleTheme} className="mx-auto"><img src="./dark-mode.png" className={`w-6 h-6 ${darkMode ? "bg-white rounded-[50%]" : ""}`} alt="dark" /></button>
           </nav>
 
           <Hamburger toggleMenu={toggleMenu} />
