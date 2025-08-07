@@ -12,15 +12,39 @@ const Contact = ({ darkMode }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Yuborilgan ma'lumot:", formData);
 
-    setFormData({
-      name: "",
-      phone: "",
-      message: "",
-    });
+    const newData = {
+      userName: formData.name,
+      phoneNumber: formData.phone,
+      description: formData.message,
+    };
+
+    try {
+      const response = await fetch(
+        "https://67fb6f7c8ee14a54262a0775.mockapi.io/portfolio",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newData),
+        }
+      );
+
+      if (response.ok) {
+        setFormData({
+          name: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        console.error("Xatolik:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Tarmoq xatosi:", error);
+    }
   };
 
   return (
