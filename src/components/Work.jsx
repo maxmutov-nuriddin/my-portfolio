@@ -13,7 +13,7 @@ const Work = ({darkMode}) => {
       </h2>
 
       <div className="my-10">
-        <CardProject />
+        <CardProject darkMode={darkMode} />
       </div>
     </section>
   );

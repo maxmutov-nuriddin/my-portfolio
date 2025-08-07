@@ -1,6 +1,6 @@
 import { Card, CardBody, CardFooter, Image } from "@heroui/react";
 
-const CardProject = () => {
+const CardProject = ({ darkMode }) => {
   const list = [
     {
       title: "YouTube",
@@ -68,20 +68,34 @@ const CardProject = () => {
               width="100%"
             />
           </CardBody>
-          <CardFooter className="text-small justify-between bg-[#EBE5C2]">
-            <b className="text-[#504B38]">{item.title}</b>
+          <CardFooter
+            className={`text-small justify-between ${
+              darkMode ? " bg-[#333]" : " bg-[#EBE5C2]"
+            }`}
+          >
+            <b className={`${darkMode ? "text-white" : "text-[#504B38]"}`}>
+              {item.title}
+            </b>
             <div className="flex gap-2">
               <a
                 href={item.git}
                 target="_blank"
-                className="text-sm border-[#504B38] rounded-lg bg-[#504B38] text-[#F8F3D9] px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out"
+                className={`text-sm border-[#504B38] rounded-lg ${
+                  darkMode
+                    ? "bg-[#000] text-[#fff]"
+                    : "bg-[#504B38] text-[#F8F3D9]"
+                }  px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
               >
                 GitHub
               </a>
               <a
                 href={item.link}
                 target="_blank"
-                className="text-sm border-[#504B38] rounded-lg bg-[#504B38] text-[#F8F3D9] px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out"
+                className={`text-sm border-[#504B38] rounded-lg ${
+                  darkMode
+                    ? "bg-[#000] text-[#fff]"
+                    : "bg-[#504B38] text-[#F8F3D9]"
+                }] px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
               >
                 View
               </a>
