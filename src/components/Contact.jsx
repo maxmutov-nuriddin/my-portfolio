@@ -34,6 +34,7 @@ const Contact = ({ darkMode }) => {
       );
 
       if (response.ok) {
+        alert("Malumotlar yuborildi");
         setFormData({
           name: "",
           phone: "",
@@ -75,7 +76,7 @@ const Contact = ({ darkMode }) => {
 
         <div>
           <input
-            type="tel"
+            type="number"
             name="phone"
             placeholder="+998 90 123 45 67"
             value={formData.phone}
