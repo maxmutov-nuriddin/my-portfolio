@@ -10,20 +10,21 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen" style={bodyStyle}>
+    <div className="flex flex-col min-h-screen " style={bodyStyle}>
       <header
-        className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed top-0 w-full z-40 shadow"
+        className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed top-0 w-full z-40 shadow "
         style={bodyStyle}
       >
-        <div className="flex justify-between items-center max-w-6xl mx-auto relative">
+        <div className="flex justify-between items-center max-w-6xl mx-auto relative ">
           <a href="#" className="hover:underline font-black text-4xl">
             MN
           </a>
 
-          <nav style={bodyStyle}
+          <nav
+            style={bodyStyle}
             className={`${
               modal == true ? "block" : "none"
-            } hidden sm:flex gap-6 py-5`} 
+            } hidden sm:flex gap-6 py-5 `}
           >
             <a href="#" className="layout-Navlink">
               Home
@@ -43,7 +44,19 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             <a href="./Resume.docx" download className="layout-Navlink">
               Resume
             </a>
-            <button onClick={toggleTheme} className="mx-auto"><img src="./dark-mode.png" className={`w-6 h-6 ${darkMode ? "bg-white rounded-[50%]" : ""}`} alt="dark" /></button>
+            <button
+              onClick={toggleTheme}
+              className="mx-auto transition duration-500 ease-in-out 
+    hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"
+            >
+              <img
+                src="./dark-mode.png"
+                className={`w-6 h-6 ${
+                  darkMode ? "bg-white rounded-[50%]" : ""
+                }`}
+                alt="dark"
+              />
+            </button>
           </nav>
 
           <Hamburger toggleMenu={toggleMenu} />

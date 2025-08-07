@@ -95,7 +95,7 @@ const CardProject = ({ darkMode }) => {
                   darkMode
                     ? "bg-[#000] text-[#fff]"
                     : "bg-[#504B38] text-[#F8F3D9]"
-                }] px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
+                }  px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
               >
                 View
               </a>

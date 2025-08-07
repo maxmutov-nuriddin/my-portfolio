@@ -8,7 +8,7 @@ const Global = ({ darkMode }) => {
   return (
     <>
       <Hero darkMode={darkMode} />
-      <div className="my-10" >
+      <div className="my-10 " >
         <About darkMode={darkMode} />
         <Skills darkMode={darkMode} />
         <Work darkMode={darkMode} />
