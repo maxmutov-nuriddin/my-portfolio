@@ -22,7 +22,7 @@ const Hero = ({ darkMode }) => {
           href="#contact"
           className={`text-xl border-[#504B38] rounded-lg  ${
             darkMode ? "bg-[#333] text-[#fff]" : "bg-[#504B38] text-[#F8F3D9]"
-          } w-30 px-3 py-2 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
+          } w-30 px-3 py-2 text-center hover:bg-[#B9B28A] hover:text-[#504B38]`}
         >
           Contact
         </a>
