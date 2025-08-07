@@ -20,10 +20,10 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             MN
           </a>
 
-          <nav
+          <nav style={bodyStyle}
             className={`${
               modal == true ? "block" : "none"
-            } hidden sm:flex gap-6 py-5`}
+            } hidden sm:flex gap-6 py-5`} 
           >
             <a href="#" className="layout-Navlink">
               Home
