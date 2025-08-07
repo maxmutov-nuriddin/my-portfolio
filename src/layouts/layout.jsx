@@ -8,6 +8,9 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
   const toggleMenu = () => {
     setModal((prev) => !prev);
   };
+  function togBtn() {
+    setModal(false);
+  }
 
   return (
     <div className="flex flex-col min-h-screen " style={bodyStyle}>
@@ -26,26 +29,33 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               modal == true ? "block" : "none"
             } hidden sm:flex gap-6 py-5 `}
           >
-            <a href="#" className="layout-Navlink">
+            <a onClick={togBtn} href="#" className="layout-Navlink">
               Home
             </a>
-            <a href="#about" className="layout-Navlink">
+            <a onClick={togBtn} href="#about" className="layout-Navlink">
               About
             </a>
-            <a href="#skills" className="layout-Navlink">
+            <a onClick={togBtn} href="#skills" className="layout-Navlink">
               Skills
             </a>
-            <a href="#work" className="layout-Navlink">
+            <a onClick={togBtn} href="#work" className="layout-Navlink">
               Work
             </a>
-            <a href="#contact" className="layout-Navlink">
+            <a onClick={togBtn} href="#contact" className="layout-Navlink">
               Contact
             </a>
-            <a href="./Resume.docx" download className="layout-Navlink">
+            <a
+              onClick={togBtn}
+              href="./Resume.docx"
+              download
+              className="layout-Navlink"
+            >
               Resume
             </a>
             <button
-              onClick={toggleTheme}
+              onClick={() => {
+                toggleTheme(), togBtn();
+              }}
               className="mx-auto transition duration-500 ease-in-out 
     hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"
             >
