@@ -2,18 +2,19 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import Hamburger from "./Hamburger";
 import { useState } from "react";
 
-const LayoutPage = () => {
+const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
   const [modal, setModal] = useState(false);
 
   const toggleMenu = () => {
     setModal((prev) => !prev);
   };
 
-  console.log(modal);
-
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed top-0 w-full z-40 shadow">
+    <div className="flex flex-col min-h-screen" style={bodyStyle}>
+      <header
+        className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed top-0 w-full z-40 shadow"
+        style={bodyStyle}
+      >
         <div className="flex justify-between items-center max-w-6xl mx-auto relative">
           <a href="#" className="hover:underline font-black text-4xl">
             MN
@@ -42,25 +43,38 @@ const LayoutPage = () => {
             <a href="./Resume.docx" download className="layout-Navlink">
               Resume
             </a>
+            <button onClick={toggleTheme}>Dark</button>
           </nav>
 
           <Hamburger toggleMenu={toggleMenu} />
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto flex-grow pt-24 pb-16 px-3 sm:px-6">
+      <main
+        className="max-w-6xl mx-auto flex-grow pt-24 pb-16 px-3 sm:px-6"
+        style={bodyStyle}
+      >
         <Outlet />
       </main>
 
       <footer className="w-[100%]">
-        <div className="bg-[#EBE5C2] text-[#504B38] pt-10 pb-20 text-center flex flex-col gap-2">
+        <div
+          className="bg-[#EBE5C2] text-[#504B38] pt-10 pb-20 text-center flex flex-col gap-2"
+          style={bodyStyle}
+        >
           <h2 className="font-black text-3xl">Nuriddin</h2>
           <a
             target="_blank"
             href="tel:+998943322218"
             className="flex justify-center gap-2 items-center hover:underline"
           >
-            <img src="./phone.png" alt="Phone" className="w-5 h-5" />
+            <img
+              src="./phone.png"
+              alt="Phone"
+              className={`w-5 h-5 bg- ${
+                darkMode ? "bg-white rounded-[50%] border" : ""
+              }`}
+            />
             +998 94 332 22 18
           </a>
 
@@ -71,18 +85,39 @@ const LayoutPage = () => {
               target="_blank"
               href="https://github.com/maxmutov-nuriddin?tab=repositories"
             >
-              <img src="./git.png" alt="git" className="w-8 h-8" />
+              <img
+                src="./git.png"
+                alt="git"
+                className={`w-8 h-8 ${
+                  darkMode ? "bg-white rounded-[50%] border" : ""
+                }`}
+              />
             </a>
             <a target="_blank" href="https://instagram.com/mv_nuriddin">
-              <img src="./instagram.png" alt="instagram" className="w-8 h-8" />
+              <img
+                src="./instagram.png"
+                alt="instagram"
+                className={`w-8 h-8 ${
+                  darkMode ? "bg-white rounded-[50%] border !important" : ""
+                }`}
+              />
             </a>
             <a target="_blank" href="https://t.me/mv_nuriddin">
-              <img src="./telegram.png" alt="telegram" className="w-8 h-8" />
+              <img
+                src="./telegram.png"
+                alt="telegram"
+                className={`w-8 h-8 ${
+                  darkMode ? "bg-white rounded-[50%] border" : ""
+                }`}
+              />
             </a>
           </div>
         </div>
 
-        <div className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center border-t border-[#504B38]/30">
+        <div
+          className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center border-t border-[#504B38]/30"
+          style={bodyStyle}
+        >
           <span className="layout-span__text">CV base</span> ©2025 Created by{" "}
           <span className="layout-span__text">
             <u>FWB</u>

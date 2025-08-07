@@ -1,21 +1,28 @@
 import { Progress } from "@heroui/react";
 import Aos from "aos";
 
-const Skills = () => {
+const Skills = ({ darkMode }) => {
   Aos.init();
   return (
-    <section
-      className="my-10"
-      id="skills"
-    >
-      <h2 className="text-center font-black text-5xl text-[#504B38]">Skills</h2>
+    <section className="my-10" id="skills">
+      <h2
+        className={`text-center font-black text-5xl ${
+          darkMode ? " text-[#fff]" : "text-[#504B38]"
+        }`}
+      >
+        Skills
+      </h2>
 
       <div className="mt-5 flex justify-between gap-10 items-center flex-col md:flex-row">
         <div className="">
-          <h2 className="text-start font-black text-3xl text-[#504B38] ">
+          <h2
+            className={`text-start font-black text-3xl ${
+              darkMode ? " text-[#fff]" : "text-[#504B38]"
+            } `}
+          >
             Profesional Skills
           </h2>
-          <p className="text-[#504B38]">
+          <p className={`${darkMode ? " text-[#fff]" : "text-[#504B38]"}`}>
             Creative and detail-oriented Frontend Developer skilled in modern
             web technologies like HTML, CSS, JavaScript, and React, with
             hands-on experience in Git and UI/UX design tools.
@@ -46,7 +53,7 @@ const Skills = () => {
             radius="sm"
             showValueLabel={true}
             size="sm"
-            value={90}
+            value={95}
           />
           <Progress
             classNames={{
@@ -60,7 +67,7 @@ const Skills = () => {
             radius="sm"
             showValueLabel={true}
             size="sm"
-            value={85}
+            value={90}
           />
           <Progress
             classNames={{
@@ -74,7 +81,7 @@ const Skills = () => {
             radius="sm"
             showValueLabel={true}
             size="sm"
-            value={85}
+            value={97}
           />
           <Progress
             classNames={{
@@ -102,7 +109,7 @@ const Skills = () => {
             radius="sm"
             showValueLabel={true}
             size="sm"
-            value={75}
+            value={79}
           />
           <Progress
             classNames={{
@@ -116,7 +123,7 @@ const Skills = () => {
             radius="sm"
             showValueLabel={true}
             size="sm"
-            value={80}
+            value={90}
           />
           <Progress
             classNames={{

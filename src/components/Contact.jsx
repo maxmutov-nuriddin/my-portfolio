@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -25,7 +25,11 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h2 className="text-center font-black text-5xl text-[#504B38]">
+      <h2
+        className={`text-center font-black text-5xl ${
+          darkMode ? " text-[#fff]" : "text-[#504B38]"
+        }`}
+      >
         Contact
       </h2>
       <form
@@ -39,7 +43,9 @@ const Contact = () => {
             placeholder="Ismingiz"
             value={formData.name}
             onChange={handleChange}
-            className="w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
+            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              darkMode ? " text-[#fff]" : "text-[#504B38]"
+            }`}
           />
         </div>
 
@@ -50,7 +56,9 @@ const Contact = () => {
             placeholder="+998 90 123 45 67"
             value={formData.phone}
             onChange={handleChange}
-            className="w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
+            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              darkMode ? " text-[#fff]" : "text-[#504B38]"
+            }`}
           />
         </div>
 
@@ -61,13 +69,17 @@ const Contact = () => {
             placeholder="Xabaringizni yozing..."
             value={formData.message}
             onChange={handleChange}
-            className="w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#504B38]"
+            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              darkMode ? " text-[#fff]" : "text-[#504B38]"
+            }`}
           />
         </div>
 
         <button
           type="submit"
-          className="text-xl border-[#504B38] rounded-lg bg-[#504B38] text-[#F8F3D9] w-35 px-3 py-2 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out"
+          className={`text-xl border-[#504B38] rounded-lg bg-[#504B38] text-[#F8F3D9] w-35 px-3 py-2 text-center hover:bg-[#B9B28A] hover:${
+            darkMode ? " text-[#fff]" : "text-[#504B38]"
+          } transition duration-700 ease-in-out`}
         >
           Push
         </button>

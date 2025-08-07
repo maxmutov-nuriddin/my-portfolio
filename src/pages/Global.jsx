@@ -4,15 +4,15 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Work from "../components/Work";
 
-const Global = () => {
+const Global = ({ darkMode }) => {
   return (
     <>
-      <Hero />
-      <div className="my-10">
-        <About />
-        <Skills />
-        <Work />
-        <Contact/>
+      <Hero darkMode={darkMode} />
+      <div className="my-10" >
+        <About darkMode={darkMode} />
+        <Skills darkMode={darkMode} />
+        <Work darkMode={darkMode} />
+        <Contact darkMode={darkMode} />
       </div>
     </>
   );

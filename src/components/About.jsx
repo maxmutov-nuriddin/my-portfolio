@@ -1,14 +1,17 @@
 import Aos from "aos";
 import React from "react";
 
-const About = () => {
+const About = ({ darkMode }) => {
   Aos.init();
   return (
-    <section
-      className=""
-      id="about"
-    >
-      <h2 className="text-center font-black text-5xl text-[#504B38]">About</h2>
+    <section className="" id="about">
+      <h2
+        className={`text-center font-black text-5xl ${
+          darkMode ? " text-[#fff]" : "text-[#504B38]"
+        }`}
+      >
+        About
+      </h2>
 
       <div className="mt-10 flex justify-between gap-10 items-center flex-col md:flex-row ">
         <div className="">
@@ -21,8 +24,14 @@ const About = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <h2 className="font-black text-3xl text-[#504B38]">I'am Nuriddin</h2>
-          <p className=" text-[#504B38]">
+          <h2
+            className={`font-black text-3xl ${
+              darkMode ? " text-[#fff]" : "text-[#504B38]"
+            }`}
+          >
+            I'am Nuriddin
+          </h2>
+          <p className={` ${darkMode ? " text-[#fff]" : "text-[#504B38]"}`}>
             I'm Nuriddin Makhmudov — a frontend developer with 2+ years of
             experience in building responsive, user-friendly web interfaces. I'm
             also an Economics student at TMC University. I combine technical
