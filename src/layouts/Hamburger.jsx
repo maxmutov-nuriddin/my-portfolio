@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const Hamburger = ({ toggleMenu }) => {
+const Hamburger = ({ toggleMenu, modal }) => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(modal);
+  }, [modal]);
 
   return (
     <div
@@ -10,7 +14,6 @@ const Hamburger = ({ toggleMenu }) => {
         toggleMenu();
       }}
       className="absolute right-0 cursor-pointer w-6 h-5 scale-150 z-50 sm:hidden"
-      
     >
       <div
         className={`absolute w-full h-1 bg-[#504B38] transition-transform duration-200 ${

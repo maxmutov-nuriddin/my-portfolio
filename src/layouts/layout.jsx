@@ -69,7 +69,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             </button>
           </nav>
 
-          <Hamburger toggleMenu={toggleMenu} />
+          <Hamburger toggleMenu={toggleMenu} modal={modal} />
         </div>
       </header>
 
