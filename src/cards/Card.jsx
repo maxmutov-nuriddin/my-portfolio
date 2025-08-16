@@ -50,6 +50,12 @@ const CardProject = ({ darkMode }) => {
       link: "https://mvmafia.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin/mafia-game",
     },
+    {
+      title: "Weather",
+      img: "./weather.png",
+      link: "https://mvweather.netlify.app/",
+      git: "https://github.com/maxmutov-nuriddin/weather",
+    },
   ];
 
   return (
