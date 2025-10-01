@@ -95,7 +95,7 @@ h6 {
 .layout-Navlink {
   position: relative;
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .layout-Navlink::after {

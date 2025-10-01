@@ -1,4 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+import { Moon, Sun } from 'lucide-react';
 import Hamburger from "./Hamburger";
 import { useState } from "react";
 
@@ -15,7 +16,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
   return (
     <div className="flex flex-col min-h-screen " style={bodyStyle}>
       <header
-        className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed top-0 w-full z-40 shadow "
+        className={`bg-[#EBE5C2] text-[#504B38] py-3 px-6 fixed top-0 w-full z-40 shadow rounded-b-3xl ${darkMode ? "border border-white" : "border border-transparent shadow-2xl"}`}
         style={bodyStyle}
       >
         <div className="flex justify-between items-center max-w-6xl mx-auto relative ">
@@ -25,9 +26,8 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
 
           <nav
             style={bodyStyle}
-            className={`${
-              modal == true ? "block" : "none"
-            } hidden sm:flex gap-6 py-5 `}
+            className={`${modal == true ? "block" : "none"
+              } hidden sm:flex gap-6 py-5 `}
           >
             <a onClick={togBtn} href="#" className="layout-Navlink">
               Home
@@ -59,17 +59,13 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               className="mx-auto transition duration-500 ease-in-out 
     hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"
             >
-              <img
-                src="./dark-mode.png"
-                className={`w-6 h-6 ${
-                  darkMode ? "bg-white rounded-[50%]" : ""
-                }`}
-                alt="dark"
-              />
+              {
+                !darkMode ? (<Moon />) : (<Sun />)
+              }
             </button>
           </nav>
 
-          <Hamburger toggleMenu={toggleMenu} modal={modal} />
+          <Hamburger toggleMenu={toggleMenu} darkMode={darkMode} modal={modal} />
         </div>
       </header>
 
@@ -94,9 +90,8 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             <img
               src="./phone.png"
               alt="Phone"
-              className={`w-5 h-5 bg- ${
-                darkMode ? "bg-white rounded-[50%] border" : ""
-              }`}
+              className={`w-5 h-5 bg- ${darkMode ? "bg-white rounded-[50%] border" : ""
+                }`}
             />
             +998 94 332 22 18
           </a>
@@ -111,39 +106,36 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               <img
                 src="./git.png"
                 alt="git"
-                className={`w-8 h-8 ${
-                  darkMode ? "bg-white rounded-[50%] border" : ""
-                }`}
+                className={`w-8 h-8 ${darkMode ? "bg-white rounded-[50%] border" : ""
+                  }`}
               />
             </a>
             <a target="_blank" href="https://instagram.com/mv_nuriddin">
               <img
                 src="./instagram.png"
                 alt="instagram"
-                className={`w-8 h-8 ${
-                  darkMode ? "bg-white rounded-[50%] border !important" : ""
-                }`}
+                className={`w-8 h-8 ${darkMode ? "bg-white rounded-[50%] border !important" : ""
+                  }`}
               />
             </a>
             <a target="_blank" href="https://t.me/mv_nuriddin">
               <img
                 src="./telegram.png"
                 alt="telegram"
-                className={`w-8 h-8 ${
-                  darkMode ? "bg-white rounded-[50%] border" : ""
-                }`}
+                className={`w-8 h-8 ${darkMode ? "bg-white rounded-[50%] border" : ""
+                  }`}
               />
             </a>
           </div>
         </div>
 
         <div
-          className="bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center border-t border-[#504B38]/30"
+          className={`bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center border-t border-[#504B38]/30 rounded-t-3xl ${darkMode ? "border border-white" : "border border-transparent shadow-2xl"}`}
           style={bodyStyle}
         >
           <span className="layout-span__text">CV base</span> ©2025 Created by{" "}
           <span className="layout-span__text">
-            <u>FWB</u>
+            <a href="https://t.me/fortis_web" target="blank"><u>FWB</u></a>
           </span>
         </div>
       </footer>
