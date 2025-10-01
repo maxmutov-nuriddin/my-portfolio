@@ -6,9 +6,8 @@ const Skills = ({ darkMode }) => {
   return (
     <section className="my-10" id="skills">
       <h2
-        className={`text-center font-black text-5xl ${
-          darkMode ? " text-[#fff]" : "text-[#504B38]"
-        }`}
+        className={`text-center font-black text-5xl ${darkMode ? " text-[#fff]" : "text-[#504B38]"
+          }`}
       >
         Skills
       </h2>
@@ -16,9 +15,8 @@ const Skills = ({ darkMode }) => {
       <div className="mt-5 flex justify-between gap-10 items-center flex-col md:flex-row">
         <div className="">
           <h2
-            className={`text-start font-black text-3xl ${
-              darkMode ? " text-[#fff]" : "text-[#504B38]"
-            } `}
+            className={`text-start font-black text-3xl ${darkMode ? " text-[#fff]" : "text-[#504B38]"
+              } `}
           >
             Profesional Skills
           </h2>
@@ -27,118 +25,208 @@ const Skills = ({ darkMode }) => {
             web technologies like HTML, CSS, JavaScript, and React, with
             hands-on experience in Git and UI/UX design tools.
           </p>
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-gradient-to-r from-[#F8F3D9] to-[#504B38] ",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="HTML"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={98}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="СSS"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={95}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="JavaScript"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={90}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="Tailwindcss"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={97}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="Bootstrap"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={90}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="Antd design"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={79}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="React JS"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={90}
-          />
-          <Progress
-            classNames={{
-              base: "max-w-2xl",
-              track: "drop-shadow-md border rounded-xl border-[#504B38]",
-              indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
-              label: "tracking-wider font-medium text-default-600",
-              value: "text-foreground/60",
-            }}
-            label="Git"
-            radius="sm"
-            showValueLabel={true}
-            size="sm"
-            value={80}
-          />
+          <div className="flex flex-col md:flex-row justify-between gap-3 ">
+            <div className="w-[100%]">
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-gradient-to-r from-[#F8F3D9] to-[#504B38] ",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="HTML"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={100}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="СSS / SASS"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={100}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="JavaScript"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={95}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="TypeScript"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={65}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="React Js"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={90}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Node Js"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={70}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Git"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={90}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Mongo DB"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={60}
+              />
+            </div>
+            <div className="w-[100%]">
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Zustand"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={80}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Bootstrap"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={95}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Tailwindcss"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={97}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="JQuery"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={60}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Antd design"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={79}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Material UI"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={70}
+              />
+            </div>
+          </div>
         </div>
 
         <div>
