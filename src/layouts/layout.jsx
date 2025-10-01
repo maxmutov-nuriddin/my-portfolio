@@ -1,5 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Sun, Phone } from 'lucide-react';
 import Hamburger from "./Hamburger";
 import { useState } from "react";
 
@@ -87,13 +87,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             href="tel:+998943322218"
             className="flex justify-center gap-2 items-center hover:underline"
           >
-            <img
-              src="./phone.png"
-              alt="Phone"
-              className={`w-5 h-5 bg- ${darkMode ? "bg-white rounded-[50%] border" : ""
-                }`}
-            />
-            +998 94 332 22 18
+            <Phone className="w-5 h-5" />+998 94 332 22 18
           </a>
 
           <p className="my-4">Sizni ijtimoiy tarmoqlarda kutamiz:</p>
