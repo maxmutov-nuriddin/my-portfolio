@@ -56,6 +56,12 @@ const CardProject = ({ darkMode }) => {
       link: "https://mvweather.netlify.app/",
       git: "https://github.com/maxmutov-nuriddin/weather",
     },
+    {
+      title: "Tariffs",
+      img: "./tariffs.png",
+      link: "https://poetic-creponne-306f3d.netlify.app/",
+      git: "https://github.com/maxmutov-nuriddin/tariffs-test",
+    },
   ];
 
   return (
@@ -81,9 +87,8 @@ const CardProject = ({ darkMode }) => {
             />
           </CardBody>
           <CardFooter
-            className={`text-small justify-between ${
-              darkMode ? " bg-[#333]" : " bg-[#EBE5C2]"
-            }`}
+            className={`text-small justify-between ${darkMode ? " bg-[#333]" : " bg-[#EBE5C2]"
+              }`}
           >
             <b className={`${darkMode ? "text-white" : "text-[#504B38]"}`}>
               {item.title}
@@ -92,22 +97,20 @@ const CardProject = ({ darkMode }) => {
               <a
                 href={item.git}
                 target="_blank"
-                className={`text-sm border-[#504B38] rounded-lg ${
-                  darkMode
+                className={`text-sm border-[#504B38] rounded-lg ${darkMode
                     ? "bg-[#000] text-[#fff]"
                     : "bg-[#504B38] text-[#F8F3D9]"
-                }  px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
+                  }  px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
               >
                 GitHub
               </a>
               <a
                 href={item.link}
                 target="_blank"
-                className={`text-sm border-[#504B38] rounded-lg ${
-                  darkMode
+                className={`text-sm border-[#504B38] rounded-lg ${darkMode
                     ? "bg-[#000] text-[#fff]"
                     : "bg-[#504B38] text-[#F8F3D9]"
-                }  px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
+                  }  px-5 py-1 text-center hover:bg-[#B9B28A] hover:text-[#504B38] transition duration-700 ease-in-out`}
               >
                 View
               </a>
