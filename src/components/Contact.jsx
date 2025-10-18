@@ -6,8 +6,8 @@ import { useLanguage } from "../hooks/useLanguage";
 
 
 const Contact = ({ darkMode }) => {
-    const { t } = useLanguage();
-  
+  const { t } = useLanguage();
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -78,7 +78,7 @@ const Contact = ({ darkMode }) => {
           <input
             type="text"
             name="name"
-            placeholder="Full Name"
+            placeholder={t.writeName}
             value={formData.name}
             onChange={handleChange}
             required
@@ -98,8 +98,8 @@ const Contact = ({ darkMode }) => {
             onChange={handleChange}
             required
             className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${darkMode
-                ? "text-[#fff] placeholder:text-[#fff]"
-                : "text-[#504B38] placeholder:text-[#504B38]"
+              ? "text-[#fff] placeholder:text-[#fff]"
+              : "text-[#504B38] placeholder:text-[#504B38]"
               }`}
           />
 
@@ -109,7 +109,7 @@ const Contact = ({ darkMode }) => {
           <textarea
             name="message"
             rows={4}
-            placeholder="Write your message..."
+            placeholder={t.messagePlaceholder}
             value={formData.message}
             onChange={handleChange}
             required

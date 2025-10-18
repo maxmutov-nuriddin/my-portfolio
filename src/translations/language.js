@@ -19,7 +19,11 @@ const translations = {
       "I'm a creative and detail-oriented Frontend Developer skilled in modern web technologies like HTML, CSS, JavaScript, and React. I have practical experience with Git and UI/UX design tools and always strive to build clean, responsive, and user-friendly interfaces.",
 
     messagePlaceholder: "Write your message...",
+    writeName: "Full Name",
     send: "Send Message",
+
+    connectText: "Stay connected on social media:",
+
   },
 
   ru: {
@@ -42,7 +46,12 @@ const translations = {
       "Я креативный и внимательный к деталям фронтенд-разработчик, владею современными веб-технологиями, такими как HTML, CSS, JavaScript и React. Имею практический опыт работы с Git и инструментами UI/UX-дизайна, стремлюсь создавать чистые, отзывчивые и удобные интерфейсы.",
 
     messagePlaceholder: "Напишите ваше сообщение...",
+    writeName: "Полное имя",
     send: "Отправить сообщение",
+
+    connectText: "Оставаться на связи в социальных сетях:",
+
+
   },
 
   uz: {
@@ -65,7 +74,11 @@ const translations = {
       "Men ijodkor va tafsilotlarga e’tiborli frontend dasturchiman. HTML, CSS, JavaScript va React kabi zamonaviy texnologiyalarni bilaman. Git hamda UI/UX dizayn vositalarida tajribam bor va har doim toza, qulay interfeyslar yaratishga intilaman.",
 
     messagePlaceholder: "Xabaringizni yozing...",
+    writeName: "To‘liq ism",
     send: "Xabar yuborish",
+
+    connectText: "Ijtimoiy tarmoqlarda bog‘lanib turaylik:",
+
   },
 };
 

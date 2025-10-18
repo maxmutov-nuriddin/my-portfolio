@@ -100,7 +100,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
           className="bg-[#EBE5C2] text-[#504B38] pt-10 pb-20 text-center flex flex-col gap-2"
           style={bodyStyle}
         >
-          <h2 className="font-black text-3xl">Nuriddin</h2>
+          <h2 className="font-black text-3xl">{t.name}</h2>
           <a
             target="_blank"
             href="tel:+998943322218"
@@ -109,7 +109,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             <Phone className="w-5 h-5" />+998 94 332 22 18
           </a>
 
-          <p className="my-4">Let’s stay connected on social media:</p>
+          <p className="my-4">{t.connectText}</p>
 
           <div className="flex justify-center gap-6 mt-4">
             <a
@@ -148,8 +148,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
         <div
           className={`bg-[#EBE5C2] text-[#504B38] py-4 px-6 fixed bottom-0 w-full z-40 text-center border-t border-[#504B38]/30 rounded-t-3xl ${darkMode ? "border border-white" : "border border-transparent shadow-2xl"}`}
           style={bodyStyle}
-        >
-          <span className="layout-span__text">CV base</span> ©2025 Created by{" "}
+        >CV base ©2025 Created by{" "}
           <span className="layout-span__text">
             <a className="hover:text-[#B9B28A] transition duration-500 ease-in-out" href="https://t.me/fortis_web" target="blank"><u>FWB</u></a>
           </span>
