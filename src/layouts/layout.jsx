@@ -90,7 +90,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             <Phone className="w-5 h-5" />+998 94 332 22 18
           </a>
 
-          <p className="my-4">Sizni ijtimoiy tarmoqlarda kutamiz:</p>
+          <p className="my-4">Let’s stay connected on social media:</p>
 
           <div className="flex justify-center gap-6 mt-4">
             <a

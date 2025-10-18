@@ -75,7 +75,7 @@ const Contact = ({ darkMode }) => {
           <input
             type="text"
             name="name"
-            placeholder="Ismingiz"
+            placeholder="Full Name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -106,7 +106,7 @@ const Contact = ({ darkMode }) => {
           <textarea
             name="message"
             rows={4}
-            placeholder="Xabaringizni yozing..."
+            placeholder="Write your message..."
             value={formData.message}
             onChange={handleChange}
             required
