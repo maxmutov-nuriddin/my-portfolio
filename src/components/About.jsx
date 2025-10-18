@@ -1,7 +1,10 @@
 import Aos from "aos";
 import React from "react";
+import { useLanguage } from "../hooks/useLanguage";
 
 const About = ({ darkMode }) => {
+    const { t } = useLanguage();
+  
   Aos.init();
   return (
     <section className="" id="about">
@@ -10,7 +13,7 @@ const About = ({ darkMode }) => {
           darkMode ? " text-[#fff]" : "text-[#504B38]"
         }`}
       >
-        About
+        {t.about}
       </h2>
 
       <div className="mt-10 flex justify-between gap-10 items-center flex-col md:flex-row ">
@@ -29,15 +32,10 @@ const About = ({ darkMode }) => {
               darkMode ? " text-[#fff]" : "text-[#504B38]"
             }`}
           >
-            I'am Nuriddin
+            {t.iam} {t.name}
           </h2>
           <p className={` ${darkMode ? " text-[#fff]" : "text-[#504B38]"}`}>
-            I'm Nuriddin Makhmudov — a frontend developer with 2+ years of
-            experience in building responsive, user-friendly web interfaces. I'm
-            also an Economics student at TMC University. I combine technical
-            skills with analytical thinking and currently work as a coding
-            instructor at CoddyCamp. Passionate about learning, teaching, and
-            solving real-world challenges.
+            {t.aboutText}
           </p>
         </div>
       </div>

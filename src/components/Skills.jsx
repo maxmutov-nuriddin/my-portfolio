@@ -1,7 +1,10 @@
 import { Progress } from "@heroui/react";
 import Aos from "aos";
+import { useLanguage } from "../hooks/useLanguage";
 
 const Skills = ({ darkMode }) => {
+  const { t } = useLanguage();
+
   Aos.init();
   return (
     <section className="my-10" id="skills">
@@ -9,7 +12,7 @@ const Skills = ({ darkMode }) => {
         className={`text-center font-black text-5xl ${darkMode ? " text-[#fff]" : "text-[#504B38]"
           }`}
       >
-        Skills
+        {t.skills}
       </h2>
 
       <div className="mt-5 flex justify-between gap-10 items-center flex-col md:flex-row">
@@ -18,12 +21,10 @@ const Skills = ({ darkMode }) => {
             className={`text-start font-black text-3xl ${darkMode ? " text-[#fff]" : "text-[#504B38]"
               } `}
           >
-            Profesional Skills
+            {t.professionalSkillsTitle}
           </h2>
           <p className={`${darkMode ? " text-[#fff]" : "text-[#504B38]"}`}>
-            Creative and detail-oriented Frontend Developer skilled in modern
-            web technologies like HTML, CSS, JavaScript, and React, with
-            hands-on experience in Git and UI/UX design tools.
+            {t.professionalSkillsText}
           </p>
           <div className="flex flex-col md:flex-row justify-between gap-3 ">
             <div className="w-[100%]">
