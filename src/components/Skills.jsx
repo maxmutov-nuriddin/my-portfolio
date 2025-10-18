@@ -125,6 +125,8 @@ const Skills = ({ darkMode }) => {
                 size="sm"
                 value={90}
               />
+            </div>
+            <div className="w-[100%]">
               <Progress
                 classNames={{
                   base: "max-w-2xl",
@@ -133,14 +135,12 @@ const Skills = ({ darkMode }) => {
                   label: "tracking-wider font-medium text-default-600",
                   value: "text-foreground/60",
                 }}
-                label="Mongo DB"
+                label="Figma"
                 radius="sm"
                 showValueLabel={true}
                 size="sm"
-                value={60}
+                value={100}
               />
-            </div>
-            <div className="w-[100%]">
               <Progress
                 classNames={{
                   base: "max-w-2xl",
@@ -224,6 +224,20 @@ const Skills = ({ darkMode }) => {
                 showValueLabel={true}
                 size="sm"
                 value={70}
+              />
+              <Progress
+                classNames={{
+                  base: "max-w-2xl",
+                  track: "drop-shadow-md border rounded-xl border-[#504B38]",
+                  indicator: "bg-linear-to-r from-[#F8F3D9] to-[#504B38]",
+                  label: "tracking-wider font-medium text-default-600",
+                  value: "text-foreground/60",
+                }}
+                label="Mongo DB"
+                radius="sm"
+                showValueLabel={true}
+                size="sm"
+                value={60}
               />
             </div>
           </div>
