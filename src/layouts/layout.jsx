@@ -26,8 +26,9 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
 
           <nav
             style={bodyStyle}
-            className={`${modal == true ? "block" : "none"
-              } hidden sm:flex gap-6 py-5 `}
+            className={`${modal ? "block flex flex-col items-center gap-6 py-5 mt-[11px]" : "hidden sm:flex gap-6 py-5"}`}
+
+
           >
             <a onClick={togBtn} href="#" className="layout-Navlink">
               Home
@@ -52,6 +53,20 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
             >
               Resume
             </a>
+            <select
+              id="language-select"
+              className="appearance-none bg-transparent border-none outline-none cursor-pointer relative z-50"
+              style={{
+                backgroundColor: 'transparent',
+                WebkitAppearance: 'none',
+                MozAppearance: 'none',
+              }}
+            >
+              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]" } `} value="en">En</option>
+              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]" } `} value="ru">Ru</option>
+              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]" } `} value="uz">Uz</option>
+            </select>
+
             <button
               onClick={() => {
                 toggleTheme(), togBtn();
