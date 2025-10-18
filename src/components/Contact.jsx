@@ -62,9 +62,8 @@ const Contact = ({ darkMode }) => {
     <section id="contact">
       <ToastContainer position="top-right" autoClose={3000} />
       <h2
-        className={`text-center font-black text-5xl ${
-          darkMode ? " text-[#fff]" : "text-[#504B38]"
-        }`}
+        className={`text-center font-black text-5xl ${darkMode ? " text-[#fff]" : "text-[#504B38]"
+          }`}
       >
         Contact
       </h2>
@@ -80,9 +79,10 @@ const Contact = ({ darkMode }) => {
             value={formData.name}
             onChange={handleChange}
             required
-            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-              darkMode ? " text-[#fff]" : "text-[#504B38]"
-            }`}
+            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${darkMode
+              ? "text-[#fff] placeholder:text-[#fff]"
+              : "text-[#504B38] placeholder:text-[#504B38]"
+              }`}
           />
         </div>
 
@@ -94,10 +94,12 @@ const Contact = ({ darkMode }) => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-              darkMode ? " text-[#fff]" : "text-[#504B38]"
-            }`}
+            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${darkMode
+                ? "text-[#fff] placeholder:text-[#fff]"
+                : "text-[#504B38] placeholder:text-[#504B38]"
+              }`}
           />
+
         </div>
 
         <div>
@@ -108,17 +110,16 @@ const Contact = ({ darkMode }) => {
             value={formData.message}
             onChange={handleChange}
             required
-            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-              darkMode ? " text-[#fff]" : "text-[#504B38]"
-            }`}
+            className={`w-70 sm:w-100 md:w-120 xl:w-150 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 ${darkMode ? "text-[#fff] placeholder:text-[#fff]"
+              : "text-[#504B38] placeholder:text-[#504B38]"
+              }`}
           />
         </div>
 
         <button
           type="submit"
           className={`text-xl border-[#504B38] rounded-lg  
-            ${
-              darkMode ? "bg-[#333] text-[#fff]" : "bg-[#504B38] text-[#F8F3D9]"
+            ${darkMode ? "bg-[#333] text-[#fff]" : "bg-[#504B38] text-[#F8F3D9]"
             } 
             w-30 px-3 py-2 text-center 
             hover:bg-[#B9B28A] hover:text-[#504B38] 

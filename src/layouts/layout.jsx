@@ -57,7 +57,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
                 toggleTheme(), togBtn();
               }}
               className="mx-auto transition duration-500 ease-in-out 
-    hover:scale-105 hover:shadow-2xl hover:shadow-blue-800/50"
+    hover:scale-120 hover:shadow-2xl hover:shadow-blue-800/50"
             >
               {
                 !darkMode ? (<Moon />) : (<Sun />)
@@ -85,7 +85,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
           <a
             target="_blank"
             href="tel:+998943322218"
-            className="flex justify-center gap-2 items-center hover:underline"
+            className="flex justify-center gap-2 items-center hover:text-[#B9B28A] transition duration-500 ease-in-out"
           >
             <Phone className="w-5 h-5" />+998 94 332 22 18
           </a>
@@ -100,7 +100,8 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               <img
                 src="./git.png"
                 alt="git"
-                className={`w-8 h-8 ${darkMode ? "bg-white rounded-[50%] border" : ""
+                className={`w-8 h-8 transition duration-500 ease-in-out 
+    hover:scale-120 ${darkMode ? "bg-white rounded-[50%] border" : ""
                   }`}
               />
             </a>
@@ -108,7 +109,8 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               <img
                 src="./instagram.png"
                 alt="instagram"
-                className={`w-8 h-8 ${darkMode ? "bg-white rounded-[50%] border !important" : ""
+                className={`w-8 h-8 transition duration-500 ease-in-out 
+    hover:scale-120 ${darkMode ? "bg-white rounded-[50%] border !important" : ""
                   }`}
               />
             </a>
@@ -116,7 +118,8 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               <img
                 src="./telegram.png"
                 alt="telegram"
-                className={`w-8 h-8 ${darkMode ? "bg-white rounded-[50%] border" : ""
+                className={`w-8 h-8 transition duration-500 ease-in-out 
+    hover:scale-120 ${darkMode ? "bg-white rounded-[50%] border" : ""
                   }`}
               />
             </a>
@@ -129,7 +132,7 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
         >
           <span className="layout-span__text">CV base</span> ©2025 Created by{" "}
           <span className="layout-span__text">
-            <a href="https://t.me/fortis_web" target="blank"><u>FWB</u></a>
+            <a className="hover:text-[#B9B28A] transition duration-500 ease-in-out" href="https://t.me/fortis_web" target="blank"><u>FWB</u></a>
           </span>
         </div>
       </footer>
