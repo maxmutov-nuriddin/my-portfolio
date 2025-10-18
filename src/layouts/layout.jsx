@@ -2,9 +2,11 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import { Moon, Sun, Phone } from 'lucide-react';
 import Hamburger from "./Hamburger";
 import { useState } from "react";
+import { useLanguage } from "../hooks/useLanguage";
 
 const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
   const [modal, setModal] = useState(false);
+  const { lang, setLang, t } = useLanguage();
 
   const toggleMenu = () => {
     setModal((prev) => !prev);
@@ -31,19 +33,19 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
 
           >
             <a onClick={togBtn} href="#" className="layout-Navlink">
-              Home
+              {t.home}
             </a>
             <a onClick={togBtn} href="#about" className="layout-Navlink">
-              About
+              {t.about}
             </a>
             <a onClick={togBtn} href="#skills" className="layout-Navlink">
-              Skills
+              {t.skills}
             </a>
             <a onClick={togBtn} href="#work" className="layout-Navlink">
-              Work
+              {t.work}
             </a>
             <a onClick={togBtn} href="#contact" className="layout-Navlink">
-              Contact
+              {t.contact}
             </a>
             <a
               onClick={togBtn}
@@ -51,9 +53,11 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
               download
               className="layout-Navlink"
             >
-              Resume
+              {t.resume}
             </a>
             <select
+              value={lang}
+              onChange={(e) => setLang(e.target.value)}
               id="language-select"
               className="appearance-none bg-transparent border-none outline-none cursor-pointer relative z-50"
               style={{
@@ -62,9 +66,9 @@ const LayoutPage = ({ toggleTheme, bodyStyle, darkMode }) => {
                 MozAppearance: 'none',
               }}
             >
-              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]" } `} value="en">En</option>
-              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]" } `} value="ru">Ru</option>
-              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]" } `} value="uz">Uz</option>
+              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]"} `} value="en">En</option>
+              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]"} `} value="ru">Ru</option>
+              <option onClick={togBtn} className={`${darkMode ? "bg-black" : "bg-[#EBE5C2]"} `} value="uz">Uz</option>
             </select>
 
             <button
